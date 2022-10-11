@@ -76,6 +76,7 @@ Test Acc2: 0.4317727436174038
 Rec@20 1: 0.4579036317871269
 Rec@20 2: 0.4348471772743617
 ```
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ## 4. Citation
@@ -131,6 +132,10 @@ Molecular property prediction is a graph-level prediction task that is usually u
   author={Su, Bing and Du, Dazhao and Yang, Zhao and Zhou, Yujie and Li, Jiangmeng and Rao, Anyi and Sun, Hao and Lu, Zhiwu and Wen, Ji-Rong},
   journal={arXiv preprint arXiv:2209.05481},
 =======
+=======
+## Acknowledgment
+This repository uses some code from [KV-PLM](https://github.com/thunlp/KV-PLM). Thanks to the original authors for their work!
+>>>>>>> a401b3ce (modify)
 ## Citation
 Please cite the following paper if you use the codes:
 
