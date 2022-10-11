@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MoMu
 
 The PyTorch implementation of MoMu, described in "Natural Language-informed Understanding of Molecule Graphs".
@@ -299,3 +300,7 @@ python text_text2mol_metric.py --use_gt --input_file out.txt
 }
 ```
 >>>>>>> 45318f26 (init)
+=======
+# MoleculePrediction
+ This repository contains the code of the downstream task (molecule property prediction) in the paper "Natural Language-informed Understanding of Molecule Graphs”
+>>>>>>> 9ff1526d (Initial commit)
