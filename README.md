@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MoMu
 
 The PyTorch implementation of MoMu, described in "Natural Language-informed Understanding of Molecule Graphs".
@@ -178,3 +179,7 @@ Please cite the following paper if you use the codes:
 }
 ```
 >>>>>>> 2c58e3e1 (add how to run)
+=======
+# MoleculeCaption
+ This repository contains the code of the downstream task (molecule caption) in the paper "Natural Language-informed Understanding of Molecule Graphs”
+>>>>>>> 44c5d02e (Initial commit)
