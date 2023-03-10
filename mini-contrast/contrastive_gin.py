@@ -63,8 +63,8 @@ class GINSimclr(pl.LightningModule):
             self.text_encoder = TextEncoder(pretrained=True)
             
         if self.bert_pretrain:
-            print("bert load kvplm")
-            ckpt = torch.load('kvplm_pretrained/ckpt_KV_1.pt')
+            print("BERT: load SciBERT")
+            ckpt = torch.load('pytorch_model.bin')  #('kvplm_pretrained/ckpt_KV_1.pt')
             if 'module.ptmodel.bert.embeddings.word_embeddings.weight' in ckpt:
                 pretrained_dict = {"main_model."+k[20:]: v for k, v in ckpt.items()}
             elif 'bert.embeddings.word_embeddings.weight' in ckpt:
