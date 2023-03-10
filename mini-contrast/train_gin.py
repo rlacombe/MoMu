@@ -11,7 +11,7 @@ from argparse import ArgumentParser
 from pytorch_lightning import Trainer
 import pytorch_lightning.callbacks as plc
 from pytorch_lightning.loggers import TensorBoardLogger
-from model.contrastive_gin import GINSimclr
+from contrastive_gin import GINSimclr
 from torch_geometric.data import LightningDataset
 from data_provider.pretrain_datamodule import GINPretrainDataModule
 from data_provider.pretrain_dataset import GINPretrainDataset
