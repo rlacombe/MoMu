@@ -10,8 +10,10 @@ args = parser.parse_args()
 source_dir= args.source
 target_dir= args.target
 
+files = os.listdir(source_dir)
+
 # Loop through all the files in the source directory
-for filename in os.listdir(source_dir):
+for i, filename in enumerate(files):
     if filename.endswith('.txt'):
 
         # Open the source file
@@ -25,3 +27,5 @@ for filename in os.listdir(source_dir):
         
             # Write the first 500 lines to the target file
             target_file.writelines(first_500_lines)
+
+        print(f"File {i+1} out of {len(files)}.")
