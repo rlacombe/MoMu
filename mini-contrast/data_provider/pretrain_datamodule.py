@@ -13,7 +13,7 @@ class GINPretrainDataModule(LightningDataModule):
         self,
         num_workers: int = 0,
         batch_size: int = 256,
-        data_dir: str = 'data/',
+        root: str = 'data/',
         text_max_len: int = 128,
         graph_aug1: str = 'dnodes',
         graph_aug2: str = 'subgraph',
@@ -23,7 +23,7 @@ class GINPretrainDataModule(LightningDataModule):
         super().__init__(*args, **kwargs)
         self.batch_size = batch_size
         self.num_workers = num_workers
-        self.dataset = GINPretrainDataset(data_dir, text_max_len, graph_aug1, graph_aug2)
+        self.dataset = GINPretrainDataset(root, text_max_len, graph_aug1, graph_aug2)
 
     def setup(self, stage: str = None):
         self.train_dataset = self.dataset
